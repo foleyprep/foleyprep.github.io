@@ -14,14 +14,17 @@
 
         <!-- Set the background colour of the document -->
         <style>
+			::-webkit-scrollbar {
+				width: 0px;  /* remove scrollbar space */
+				background: transparent;  /* optional: just make scrollbar invisible */
+			}
             body {
-              background: #FFFFFF;
+              background: #DDDDDD;
               color:#cccccc;
               margin: 0px;
               padding: 0px;
               border: 0px;
-			  overflow-x: hidden; <!-- added by Liam Nobel -->
-			  overflow-y: hidden;
+			  overflow: hidden;
             }
             canvas {
                       image-rendering: optimizeSpeed;
