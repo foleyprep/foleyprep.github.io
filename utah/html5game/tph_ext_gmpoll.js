@@ -38,3 +38,7 @@ function html_element_hide(id) {
 	var x = document.getElementById(id);
 	x.style.display = "none";
 }
+
+function html_get_value(id) {
+	return document.getElementById(id).value;
+}
