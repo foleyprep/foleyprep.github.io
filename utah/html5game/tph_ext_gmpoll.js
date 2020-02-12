@@ -4,8 +4,8 @@ function poll() {
 	return temp;
 }
 
-function problem_set(source) {
-	document.getElementById("problem").src = source;
+function html_set_source(id, source) {
+	document.getElementById(id).src = source;
 }
 
 function html_set(id, html) {
@@ -41,4 +41,8 @@ function html_element_hide(id) {
 
 function html_get_value(id) {
 	return document.getElementById(id).value;
+}
+
+function html_set_value(id, val) {
+	document.getElementById(id).value = val;
 }

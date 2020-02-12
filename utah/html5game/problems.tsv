@@ -1,18 +1,41 @@
-Problem	Answer A	Answer B	Answer C	Answer D	Correct Answer	Image Source
-If 3x + 6 = 30, what is the value of x + 2?	6	8	10	24	C	
-A number is raised to the third power, then subtracted from 15 to get 7. What is the number squared?	2	4	9	16	B	
-\(9^{-2}\)	1/81	1/9	9	81	A	
-What is 30% of 20% of 50?	0.3	3	5/3	30	B	
-Which of the following does <u>not</u> represent a linear function?	\(y = x\)	\(x = 3\)	\(y = -5\)	\(y = x^2 + 3\)	D	
-Two triangles are drawn: ABC with sides 3, 4, 7 and DEF with sides 9, 10, 20. Which of the following statements is true?	The triangles both do not exist.	Both triangles are right triangles.	Only one triangle is scalene.	ABC and DEF are similar triangles.	A	
-If 2,000 mL can fit in a certain glass jar, how many liters can fit in 4.5 of these jars?	9	10	9,000	10,000	A	
-Evaluate the expression \(-8(-3 + 3^{2}) + [6^{2}-(4)(3)]\)	72	24	-72	-24	D	
-Two angles are given as 120 and 60. Which statement is true?	The angles are complementary.	The angles are supplementary.	The angles could be part of a triangle.	The angles could be part of a rectangle.	B	
-When 138 is divided by 4, what is the remainder?	0	1	2	3	C	
-Of the following numbers, which does <u>not</u> equal 0.56?	\(5.6 x 10^{-2}\)	112/200	14/25	56%	A	
-What is the probability that a randomly selected factor of 36 is also a factor of 24?	5/7	5/9	2/3	3/4	C	
-What is the midpoint of the coordinates (-8, -6) and (4, 5)?	(-2. 0.5)	(-2, -0.5)	(-4, 5.5)	(0, 5.5)	B	
-How many more prime numbers exist between 10 and 20 than do between 20 and 30?	0	1	2	3	B	
-What is the average of the least common multiple and greatest common factor of 9 and 30?	3	189/2	93/2	90	C	
-A taxi company in NYC charges a flat fee of $2.50, then $0.40 per half-mile travelled. Which equation models the cost <i>C</i> for <i>m</i> miles travelled?	<i>C</i> = 2.5 + 0.9<i>m</i>	<i>C</i> = 2.5 + 0.45<i>m</i>	<i>C</i> = (2.5 + 0.9)<i>m</i>	<i>C</i> = 2.5 + 0.45(<i>m</i>/2)	A	
-$$ron_foley = sqrt(x)$$	AA	BB	CC	DD	C	
+Problem	Answer A	Answer B	Answer C	Answer D	Correct Answer	Image Source	Text
+If \(3x + 6 = 30\), what is the value of \(x + 2\)?	\(6\)	\(8\)	\(10\)	\(24\)	C		
+A number is raised to the third power, then subtracted from 15 to get 7. What is the number squared?	\(2\)	\(4\)	\(9\)	\(16\)	B		
+What is the value of the following? $$ (9^{-2}) $$ 	\(1\over81\)	\(1\over9\)	\(9\)	\(81\)	A		
+What is 30% of 20% of 50?	\(0.3\)	\(3\)	\(5\over3\)	\(30\)	B		
+Which of the following does <u>not</u> represent a linear function?	\(y = x\)	\(x = 3\)	\(y = -5\)	\(y = x^2 + 3\)	D		
+Two triangles are drawn: ABC with sides 3, 4, 7 and DEF with sides 9, 10, 20. Which of the following statements is true?	The triangles both do not exist.	Both triangles are right triangles.	Only one triangle is scalene.	ABC and DEF are similar triangles.	A		
+If 2,000 mL can fit in a certain glass jar, how many liters can fit in 4.5 of these jars?	\(9\)	\(10\)	\(9,000\)	\(10,000\)	A		
+Evaluate the expression: $$ [-8(-3 + 3^{2})] + [6^{2}-(4)(3)] $$	\(72\)	\(24\)	\(-72\)	\(-24\)	D		
+Two angles are given as 120 and 60. Which statement is true?	The angles are complementary.	The angles are supplementary.	The angles could be part of a triangle.	The angles could be part of a rectangle.	B		
+When 138 is divided by 4, what is the remainder?	\(0\)	\(1\)	\(2\)	\(3\)	C		
+Of the following numbers, which does <u>not</u> equal 0.56?	\({5.6*10^{-2}}\)	\(112\over200\)	\(14\over25\)	\(56%\)	A		
+What is the probability that a randomly selected factor of 36 is also a factor of 24?	\(5\over7\)	\(5\over9\)	\(2\over3\)	\(3\over4\)	C		
+What is the midpoint of the coordinates (-8, -6) and (4, 5)?	\((-2, 0.5)\)	\((-2, -0.5)\)	\((-4, 5.5)\)	\((0, 5.5)\)	B		
+How many more prime numbers exist between 10 and 20 than do between 20 and 30?	\(0\)	\(1\)	\(2\)	\(3\)	B		
+What is the <u>average</u> of the least common multiple and greatest common factor of 9 and 30?	\(3\)	\(189\over2\)	\(93\over2\)	\(90\)	C		
+A taxi company in NYC charges a flat fee of $2.50, then $0.40 per half-mile travelled. Which equation models the cost <i>C</i> for <i>m</i> miles travelled?	\(C=2.5+0.9m\)	\(C= 2.5 + 0.45m\)	\(C=(2.5 + 0.9)m\)	\(C=2.5+0.45({m\over{2}})\)	A		
+What is the total cost for a 6.5 mile trip?	\(5.20\)	\(7.90\)	\(8.35\)	\(14.20\)	C		
+Resh grabs a cab from this company and takes a 10-mile trip. After the trip, he tips the driver 10% of the subtotal. What is the grand total that Resh spent?	\(8.80\)	\(11.65\)	\(12.65\)	\(27.50\)	C		
+\(14\over25\) is closest to what percent?	\(42%\)	\(56%\)	\(60%\)	\(65%\)	B		
+A circle is divided into 15 equal parts from the center outward. What is the total angle measure of two of the new slices of the circle?	\({48^\circ}\)	\({36^\circ}\)	\({24^\circ}\)	\({15^\circ}\)	A		
+"Three more than two times a number squared" can be written as:	\(2(x^{2}+3)\)	\(2x^{2}+3^{2}\)	\((2x+3)^{2}\)	\(2x^{2}+3\)	D		
+Two points are given as \((3,4)\) and \((6,8)\). What is the slope of the line?	\(3\over4\)	\(1\)	\(4\over3\)	\(5\)	C		
+Write the equation of the given line in slope-intercept form.	\(y={{4x}\over{3}}\)	\(y = {4\over{3x}}\)	\(y = {4x\over{3}}+4\)	\(y = {3x\over{4}}\)	A		
+What is the distance between the two points given?	\(2\)	\(4\)	\(5\)	\(7\)	C		
+Two cars leave from the same point travelling in opposite directions (east and west). Write a model for the distance, <i>D</i>, the cars are apart at hour <i>h</i>.	\(D = 40h\)	\(D=(70+30)h\)	\(D=70h\)	\(D=30h\)	B		
+How far apart are the cars after 7 hours, 15 minutes?	700 miles	715 miles	725 miles	733 miles	C		
+Imagine the cars are now travelling in the <u>same</u> direction. At their same speeds, how far apart are they after 2.5 hours?	120 miles	100 miles	80 miles	40 miles	B		
+Solve the given equation for t: $$ {t\over3} + {8\over3}=2t-6 $$	\(26\over{7}\)	\(14\over{5}\)	\(5\)	\(26\over{5}\)	D		
+Ron has a bag of 30 marbles with 4 different colors of marbles in it. The bag contains 10 red, 7 white, 5 yellow, and 8 orange marbles. What is the probability of drawing a red marble?	\(7\over30\)	\(1\over4\)	\(1\over3\)	\(1\over8\)	C		
+If half of the red marbles and one-fourth of the orange marbles were removed from the bag, what is the probability of drawing a white or yellow marble?	\(9\over30\)	\(12\over23\)	\(7\over15\)	\(8\over23\)	B		
+What is the probability of choosing a prime number less than 25 in the set of prime numbers 0-50?	\(3\over5\)	\(8\over15\)	\(11\over14\)	\(1\over3\)	A		
+If given the below equation, what is the value of \(P-100\)? $$ 3xy(P-100)=33+x+2y $$	\((133+x+2y)\over3\)	\({11\over xy} + {1\over3y}+{2\over3x}\)	\({11\over xy} + {1\over3y}+{2\over3x} + {100}\)	\({133 + x +2y\over3xy}\)	B		
+Whitestone International purchases assets at 60% of their original price and resells them for 105% of the original price. If Whitesone International purchases computers worth $6,000, what is their profit on these items?	$3,150	$4,000	$4,500	$10,500	C		
+Given \(f(x) = x^{3}+x^{2}+x+1\), what is 10 more than \(f(y)\)?	\(y^{3}+y^{2}+y+9\)	\(x^{3}+x^{2}+x+11\)	\(6y+1\)	\(11+ y^{3}+y^{2}+y\)	D		
+What is the sum of the slopes of the lines? $$ {3x+2y=9} $$ $$ {3x-2y=11} $$	\(3\over2\)	\(0\)	\(2\over3\)	\(1\)	B		
+The variable \(\vartheta_{1}\) is defined at point \((7,3)\) and \(\vartheta_{2}\) as \((3,9)\) in the coordinate plane. If their midpoint is at \((x,y)\), what is the value of \({x\over{y}}-{y\over{x}}\)? 	\(0\)	\(61\over30\)	\(-{11\over30}\)	\(11\over30\)	C		
+Which answer completes the sequence? $$ {1, 1, 2, 8, 3, ...} $$	\(9, 4\)	\(16, 4\)	\(9, 16\)	\(27, 4\)	D		
+Moon Problem							Just as the Moon’s history was disrobed by laser ranging 50 years ago, Earth’s tropical forests are giving up their secrets to the light. Airborne light detection and ranging—called LiDAR—has over the last ten years become a key tool that ecologists use to understand physical variation in tropical forests across space and time. Like an MRI of the human brain, LiDAR probes the intricate three-dimensional architecture of the forest canopy, unveiling carbon that forests keep out of the atmosphere, and also the mounting threats to that carbon storehouse: drought, fire, clandestine logging and brash gold-mining operations. Even the quintessential natural disturbance of the sun-filled light gap—long thought to enhance the incredibly high species diversity of tropical forests—has been deconstructed by laser technology.
+SVG Test						https://i.imgur.com/PaUVB.jpg	
+Double Test						https://i.imgur.com/PaUVB.jpg	Just as the Moon’s history was disrobed by laser ranging 50 years ago, Earth’s tropical forests are giving up their secrets to the light. Airborne light detection and ranging—called LiDAR-has over the last ten years become a key tool that ecologists use to understand physical variation in tropical forests across space and time. Like an MRI of the human brain, LiDAR probes the intricate three-dimensional architecture of the forest canopy, unveiling carbon that forests keep out of the atmosphere, and also the mounting threats to that carbon storehouse: drought, fire, clandestine logging and brash gold-mining operations. Even the quintessential natural disturbance of the sun-filled light gap—long thought to enhance the incredibly high species diversity of tropical forests—has been deconstructed by laser technology.

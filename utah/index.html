@@ -69,63 +69,108 @@
 			</canvas>
 		</div>
 
+		<!-- Logo -->
 		<img src="html5game/foley_prep_logo.svg" class="rounded mx-auto d-block" alt="Foley Prep" width="33.3%" style="max-width: 192px;" />
 
 		<!-- Create input at the bottom of the screen -->
-
 		<div class="containter">
 			<div class="row">
 				<div id="diagram" class="col-md border p-0 myslider" style="max-height: 1024px; overflow: scroll; display: none;">
-					<iframe src="https://www.w3.org/TR/PNG/iso_8859-1.txt" width="100%" height="height=auto" frameborder=0></iframe>
-					<!--	Just as the Moon’s history was disrobed by laser ranging 50 years ago, Earth’s tropical forests are giving up their secrets to the light. Airborne light detection and ranging—called LiDAR—has over the last ten years become a key tool that ecologists use to understand physical variation in tropical forests across space and time. Like an MRI of the human brain, LiDAR probes the intricate three-dimensional architecture of the forest canopy, unveiling carbon that forests keep out of the atmosphere, and also the mounting threats to that carbon storehouse: drought, fire, clandestine logging and brash gold-mining operations. Even the quintessential natural disturbance of the sun-filled light gap—long thought to enhance the incredibly high species diversity of tropical forests—has been deconstructed by laser technology.
-				-->
 				</div>
 
+				<!-- App area -->
 				<div id="animated" class="col-md border p-4 myslider">
-					<!-- style="box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);">-->
-					<h4 id="problem_title">Loading...</h4>
-					<br>
-					<h4 id="problem_description"></h4>
-					<br>
-					<div id="answer_area_div">
-						<h5 id="problem_a" onclick="javascript:answerA();" style="cursor:pointer;"></h5>
-						<h5 id="problem_b" onclick="javascript:answerB();" style="cursor:pointer;"></h5>
-						<h5 id="problem_c" onclick="javascript:answerC();" style="cursor:pointer;"></h5>
-						<h5 id="problem_d" onclick="javascript:answerD();" style="cursor:pointer;"></h5>
+
+					<!-- Introduction area -->
+					<div id="div_intro">
+						<h4>Foley Prep Online Quiz System</h4>
+						<br>
+						<h4>Please enter your information accurately below. It will be the only way Foley Prep can contact you with scores after the test.</h4>
+						<br>
+						<div>
+							<form class="needs-validation">
+								<div class="row">
+									<div class="col-md-6 mb-3">
+										<label for="input_first_name">First name</label>
+										<input type="text" class="form-control" id="input_first_name" placeholder="" value="" required="">
+										<div class="invalid-feedback">
+											Valid first name is required.
+										</div>
+									</div>
+									<div class="col-md-6 mb-3">
+										<label for="input_last_name">Last name</label>
+										<input type="text" class="form-control" id="input_last_name" placeholder="" value="" required="">
+										<div class="invalid-feedback">
+											Valid last name is required.
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="input_email">Email address</label>
+									<input type="email" class="form-control" id="input_email" aria-describedby="emailHelp" required="">
+									<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-group">
+									<label for="input_phone">Phone number</label>
+									<input type="tel" class="form-control" id="input_phone" pattern="[(]{1}[0-9]{3}[)]{1} [0-9]{3}-[0-9]{4}" aria-describedby="phoneHelp" required>
+									<small id="phoneHelp" class="form-text text-muted">(555) 555-5555</small>
+								</div>
+								<button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="next(); return false;">Begin</button>
+							</form>
+						</div>
 					</div>
 
-					<!--<img id="problem" src="html5game/output.svg" class="rounded mx-auto d-block" alt="triangle with all three sides equal" width="100%" style="max-width: 512px;" />-->
+					<!-- Problem and Answer area -->
+					<div id="div_answer" style="display: none">
+
+						<div class="row">
+							<div id="div_extra" class="col-md" style="display: none">
+								<div id="div_text" class="row">
+									<p id="text_content">No content set.</p>
+								</div>
+								<div id="div_graphic" class="row">
+									<img id="graphic" src="html5game/foley_prep_logo.svg" class="rounded mx-auto d-block" alt="Failed to load problem graphic. Please call (732) 412-1416." width="100%" style="max-width: 512px;" />
+								</div>
+							</div>
+
+							<div class="col-md">
+								<h4 id="problem_title">Loading...</h4>
+								<br>
+								<h4 id="problem_description"></h4>
+								<br>
+								<div>
+									<h5 id="problem_a" onclick="javascript:answerA();" style="cursor:pointer;"></h5>
+									<h5 id="problem_b" onclick="javascript:answerB();" style="cursor:pointer;"></h5>
+									<h5 id="problem_c" onclick="javascript:answerC();" style="cursor:pointer;"></h5>
+									<h5 id="problem_d" onclick="javascript:answerD();" style="cursor:pointer;"></h5>
+								</div>
+							</div>
+						</div>
+
+						<!-- Navigation -->
+						<div class="row">
+							<div class="col p-2 bd-highlight" style="text-align:left">
+								<button type="button" class="btn btn-secondary" onclick="prev()">&lt;&nbsp;Back</button>
+							</div>
+							<div class="col p-2 bd-highlight" style="text-align:center">
+								<input id="page_input" type="text" style="width: 32px" onchange="select_problem()">&nbsp;/&nbsp;<span id="page_number_max">10</span>
+							</div>
+							<div class="col p-2 bd-highlight" style="text-align:right">
+								<button type="button" class="btn btn-secondary" onclick="next()">Next&nbsp;&gt;</button>
+							</div>
+						</div>
+					</div>
 
 					<!-- Form input fields -->
-					<div id="input_form_div" style="display: none;">
-						<form class="needs-validation">
-							<div class="row">
-								<div class="col-md-6 mb-3">
-									<label for="input_first_name">First name</label>
-									<input type="text" class="form-control" id="input_first_name" placeholder="" value="" required="">
-									<div class="invalid-feedback">
-										Valid first name is required.
-									</div>
-								</div>
-								<div class="col-md-6 mb-3">
-									<label for="input_last_name">Last name</label>
-									<input type="text" class="form-control" id="input_last_name" placeholder="" value="" required="">
-									<div class="invalid-feedback">
-										Valid last name is required.
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="input_email">Email address</label>
-								<input type="email" class="form-control" id="input_email" aria-describedby="emailHelp" required="">
-								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-							</div>
-							<div class="form-group">
-								<label for="input_phone">Phone number</label>
-								<input type="tel" class="form-control" id="input_phone" pattern="([0-9]{3}) [0-9]{3}-[0-9]{4}" required>
-							</div>
-							<button type="button" class="btn btn-success btn-lg float-right" onclick="finish(); return false;">Submit</button>
-						</form>
+					<div id="div_complete" style="display: none">
+						<h4>Complete</h4>
+						<br>
+						<h4>Please press the "Finish" button to send your scores to Foley Prep. You should recieve you test results via email within 48 hours.</h4>
+						<br>
+						<div class="row">
+							<div class="col"><button type="button" class="btn btn-secondary btn-lg btn-block float-right" onclick="prev()">Go back</button></div>
+							<div class="col"><button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="finish();">Finish</button></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -149,7 +194,7 @@
 		</div>
 
 		<div id="complete" class="d-flex justify-content-center">
-			<div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-secondary" onclick="finish_early()">Finish Early</button></div>
+			<div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-secondary" onclick="finish_early()">Finish early</button></div>
 		</div>
 
 		<div width="512" id="problem_svg">
@@ -175,6 +220,10 @@
 			el.style.animation = null;
 		}
 		function upload() { window.gmpoll = 8; document.getElementById("problem_title").innerHTML = "Loading..."; }
+		function select_problem() {
+			console.log("Changing page.");
+			window.gmpoll = 9;
+		}
 	</script>
 
 	<!-- Start controller -->
