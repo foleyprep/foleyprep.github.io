@@ -15,6 +15,10 @@
 
 	<!-- Custom Stylesheet -->
 	<style>
+		body {
+			padding-bottom: 256px;
+		}
+
 		.center {
 			margin: auto;
 			padding: 10px;
@@ -208,7 +212,7 @@
 	</div>
 
 	<!-- Create input at the bottom of the screen -->
-	<div id="console" class="fixed-bottom center" style="display: none;">
+	<div id="console" class="fixed-bottom center" style="background-color: #acacac; display: none;">
 		<div class="d-flex justify-content-center">
 			<div class="p-2 bd-highlight"><button type="button" class="btn btn-secondary" onclick="prev()">&lt;&nbsp;</button></div>
 			<div class="p-1 bd-highlight"><button type="button" class="btn btn-outline-primary" onclick="answerA()">A</button></div>
@@ -219,15 +223,8 @@
 		</div>
 
 		<div id="upload" class="d-flex justify-content-center">
-			<textarea id="uploader" onpaste="upload()">Paste your copied TSV here.</textarea>
+			<textarea id="uploader" onclick="this.value = ''" onpaste="upload()">Paste your copied TSV here.</textarea>
 			<!--<div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-secondary" onclick="upload()">Upload</button></div>-->
-		</div>
-
-		<div id="upload_image">
-			<form method="post" enctype="multipart/form-data" action="https://server.foleyprep.com/upload">
-				<input type="file" name="file">
-				<input type="submit" value="Submit">
-			</form>
 		</div>
 
 		<div id="complete" class="d-flex justify-content-center">
