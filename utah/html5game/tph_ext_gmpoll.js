@@ -46,3 +46,7 @@ function html_get_value(id) {
 function html_set_value(id, val) {
 	document.getElementById(id).value = val;
 }
+
+function html_get_window() {
+	return window.wheretoload;
+}

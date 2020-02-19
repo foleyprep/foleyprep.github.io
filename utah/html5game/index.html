@@ -72,7 +72,7 @@
 		<!-- Logo -->
 		<img src="html5game/foley_prep_logo.svg" class="rounded mx-auto d-block" alt="Foley Prep" width="33.3%" style="max-width: 192px;" />
 
-		<!-- Create input at the bottom of the screen -->
+		<!-- Not actually sure -->
 		<div class="containter">
 			<div class="row">
 				<div id="diagram" class="col-md border p-0 myslider" style="max-height: 1024px; overflow: scroll; display: none;">
@@ -81,8 +81,20 @@
 				<!-- App area -->
 				<div id="animated" class="col-md border p-4 myslider">
 
+					<!-- Loading screen -->
+					<div id="div_loading">
+						<h4>Loading...</h4>
+					</div>
+
+					<!-- Test selection area -->
+					<div id="div_tests" style="display: none">
+						<h4>Please Select a Test</h4>
+						<div id="testlist" class="list-group">
+						</div>
+					</div>
+
 					<!-- Introduction area -->
-					<div id="div_intro">
+					<div id="div_intro" style="display: none">
 						<h4>Foley Prep Online Quiz System</h4>
 						<br>
 						<h4>Please enter your information accurately below. It will be the only way Foley Prep can contact you with scores after the test.</h4>
@@ -124,16 +136,16 @@
 					<div id="div_answer" style="display: none">
 
 						<div class="row">
-							<div id="div_extra" class="col-md" style="display: none">
-								<div id="div_text" class="row">
+							<div id="div_extra" class="col-md p-2" style="display: none">
+								<div id="div_text" class="row p-2">
 									<p id="text_content">No content set.</p>
 								</div>
-								<div id="div_graphic" class="row">
+								<div id="div_graphic" class="row p-2">
 									<img id="graphic" src="html5game/foley_prep_logo.svg" class="rounded mx-auto d-block" alt="Failed to load problem graphic. Please call (732) 412-1416." width="100%" style="max-width: 512px;" />
 								</div>
 							</div>
 
-							<div class="col-md">
+							<div class="col-md p-2">
 								<h4 id="problem_title">Loading...</h4>
 								<br>
 								<h4 id="problem_description"></h4>
@@ -163,7 +175,7 @@
 
 					<!-- Form input fields -->
 					<div id="div_complete" style="display: none">
-						<h4>Complete</h4>
+						<h4>End of Test</h4>
 						<br>
 						<h4>Please press the "Finish" button to send your scores to Foley Prep. You should recieve you test results via email within 48 hours.</h4>
 						<br>
@@ -171,6 +183,24 @@
 							<div class="col"><button type="button" class="btn btn-secondary btn-lg btn-block float-right" onclick="prev()">Go back</button></div>
 							<div class="col"><button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="finish();">Finish</button></div>
 						</div>
+					</div>
+
+					<!-- Test Confirmation -->
+					<div id="div_confirmation" style="display: none">
+						<h4>Complete!</h4>
+						<br>
+						<h4>Your scores have been successfully recorded. Please monitor your email for results.</h4>
+					</div>
+
+					<!-- Test Failure -->
+					<div id="div_failure" style="display: none">
+						<h4>Oops</h4>
+						<br>
+						<div class="col"><button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="finish();">Retry</button></div>
+						<br>
+						<h4>There was an error but don't worry. You may try again in a few minutes or you may copy your information from below to email the details directly to info@foleyprep.com. We apologize for the inconvenience.</h4>
+						<br>
+						<h4>If you have any concerns, please call (732) 412-1416.</h4>
 					</div>
 				</div>
 			</div>
@@ -191,6 +221,13 @@
 		<div id="upload" class="d-flex justify-content-center">
 			<textarea id="uploader" onpaste="upload()">Paste your copied TSV here.</textarea>
 			<!--<div class="p-2 bd-highlight"><button type="button" class="btn btn-outline-secondary" onclick="upload()">Upload</button></div>-->
+		</div>
+
+		<div id="upload_image">
+			<form method="post" enctype="multipart/form-data" action="https://server.foleyprep.com/upload">
+				<input type="file" name="file">
+				<input type="submit" value="Submit">
+			</form>
 		</div>
 
 		<div id="complete" class="d-flex justify-content-center">
@@ -223,6 +260,10 @@
 		function select_problem() {
 			console.log("Changing page.");
 			window.gmpoll = 9;
+		}
+		function select_test(name) {
+			window.wheretoload = name;
+			window.gmpoll = 10;
 		}
 	</script>
 
