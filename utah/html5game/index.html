@@ -79,31 +79,31 @@
 		<!-- Not actually sure -->
 		<div class="containter">
 			<div class="row">
-				<div id="diagram" class="col-md border p-0 myslider" style="max-height: 1024px; overflow: scroll; display: none;">
+				<div id="diagram" class="col-md border myslider" style="max-height: 1024px; overflow: scroll; display: none;">
 				</div>
 
 				<!-- App area -->
-				<div id="animated" class="col-md border p-4 myslider">
+				<div id="animated" class="col-md py-2 border myslider">
 
 					<!-- Loading screen -->
-					<div id="div_loading">
+					<div id="div_loading" class="m-4">
 						<h4>Loading...</h4>
 					</div>
 
 					<!-- Test selection area -->
-					<div id="div_tests" style="display: none">
-						<h4>Please Select a Test</h4>
+					<div id="div_tests" class="m-4" style="display: none">
+						<h4>Please select a test.</h4>
 						<div id="testlist" class="list-group">
 						</div>
 					</div>
 
 					<!-- Introduction area -->
-					<div id="div_intro" style="display: none">
+					<div id="div_intro" class="m-4" style="display: none">
 						<h4>Foley Prep Online Quiz System</h4>
 						<br>
 						<h4>Please enter your information accurately below. It will be the only way Foley Prep can contact you with scores after the test.</h4>
 						<br>
-						<div>
+						<div class="container">
 							<form class="needs-validation">
 								<div class="row">
 									<div class="col-md-6 mb-3">
@@ -131,25 +131,25 @@
 									<input type="tel" class="form-control" id="input_phone" pattern="[(]{1}[0-9]{3}[)]{1} [0-9]{3}-[0-9]{4}" aria-describedby="phoneHelp" required>
 									<small id="phoneHelp" class="form-text text-muted">(555) 555-5555</small>
 								</div>
-								<button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="next(); return false;">Begin</button>
+								<button type="button" class="btn btn-success btn-lg btn-block" onclick="next(); return false;">Begin</button>
 							</form>
 						</div>
 					</div>
 
 					<!-- Problem and Answer area -->
-					<div id="div_answer" style="display: none">
+					<div id="div_answer" class="m-4" style="display: none">
 
 						<div class="row">
-							<div id="div_extra" class="col-md p-2" style="display: none">
-								<div id="div_text" class="row p-2">
+							<div id="div_extra" class="col-md m-4" style="display: none">
+								<div id="div_text" class="row">
 									<p id="text_content">No content set.</p>
 								</div>
-								<div id="div_graphic" class="row p-2">
+								<div id="div_graphic" class="row">
 									<img id="graphic" src="html5game/foley_prep_logo.svg" class="rounded mx-auto d-block" alt="Failed to load problem graphic. Please call (732) 412-1416." width="100%" style="max-width: 512px;" />
 								</div>
 							</div>
 
-							<div class="col-md p-2">
+							<div class="col-md m-4">
 								<h4 id="problem_title">Loading...</h4>
 								<br>
 								<h4 id="problem_description"></h4>
@@ -165,20 +165,20 @@
 
 						<!-- Navigation -->
 						<div class="row">
-							<div class="col p-2 bd-highlight" style="text-align:left">
+							<div class="col m-4 bd-highlight" style="text-align:left">
 								<button type="button" class="btn btn-secondary" onclick="prev()">&lt;&nbsp;Back</button>
 							</div>
-							<div class="col p-2 bd-highlight" style="text-align:center">
+							<div class="col m-4 bd-highlight" style="text-align:center">
 								<input id="page_input" type="text" style="width: 32px" onchange="select_problem()">&nbsp;/&nbsp;<span id="page_number_max">10</span>
 							</div>
-							<div class="col p-2 bd-highlight" style="text-align:right">
+							<div class="col m-4 bd-highlight" style="text-align:right">
 								<button type="button" class="btn btn-secondary" onclick="next()">Next&nbsp;&gt;</button>
 							</div>
 						</div>
 					</div>
 
 					<!-- Form input fields -->
-					<div id="div_complete" style="display: none">
+					<div id="div_complete" class="m-4" style="display: none">
 						<h4>End of Test</h4>
 						<br>
 						<h4>Please press the "Finish" button to send your scores to Foley Prep. You should recieve you test results via email within 48 hours.</h4>
@@ -190,14 +190,16 @@
 					</div>
 
 					<!-- Test Confirmation -->
-					<div id="div_confirmation" style="display: none">
+					<div id="div_confirmation" class="m-4" style="display: none">
 						<h4>Complete!</h4>
 						<br>
-						<h4>Your scores have been successfully recorded. Please monitor your email for results.</h4>
+						<h4 id="results"></h4>
+						<br>
+						<h4>Your scores have been successfully recorded. Please monitor your email for detailed results.</h4>
 					</div>
 
 					<!-- Test Failure -->
-					<div id="div_failure" style="display: none">
+					<div id="div_failure" class="m-4" style="display: none">
 						<h4>Oops</h4>
 						<br>
 						<div class="col"><button type="button" class="btn btn-success btn-lg btn-block float-right" onclick="finish();">Retry</button></div>
@@ -207,6 +209,7 @@
 						<h4>If you have any concerns, please call (732) 412-1416.</h4>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>

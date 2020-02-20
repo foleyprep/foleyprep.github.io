@@ -10,8 +10,6 @@ function html_set_source(id, source) {
 
 function html_set(id, html) {
 	document.getElementById(id).innerHTML = html;
-	MathJax.typesetClear();
-	MathJax.typeset();
 }
 
 function html_fake_load() {
@@ -49,4 +47,14 @@ function html_set_value(id, val) {
 
 function html_get_window() {
 	return window.wheretoload;
+}
+
+function html_mathjax_reset() {
+	MathJax.typesetClear();
+	MathJax.typeset();
+}
+
+function html_scroll_to_element(id) {
+	var element = document.getElementById(id);
+	element.scrollIntoView();
 }
