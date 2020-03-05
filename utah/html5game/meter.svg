@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 27.98">
+  <defs>
+    <linearGradient id="a" x1="99.46" y1="11.27" x2="164.96" y2="39.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ed2024"/>
+      <stop offset="0.53" stop-color="#faed23"/>
+      <stop offset="1" stop-color="#6abd45"/>
+    </linearGradient>
+  </defs>
+  <title>Meter</title>
+  <path d="M128,13a19,19,0,0,1,19,19h7a26,26,0,0,0-52,0h7A19,19,0,0,1,128,13Z" transform="translate(-102 -6)" style="fill: url(#a)"/>
+  <path d="M138.05,13.56,129.6,32.88a1.84,1.84,0,0,1-2.56.88h0a1.85,1.85,0,0,1-.65-2.63l11.66-17.57" transform="translate(-102 -6)"/>
+</svg>

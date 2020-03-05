@@ -56,5 +56,5 @@ function html_mathjax_reset() {
 
 function html_scroll_to_element(id) {
 	var element = document.getElementById(id);
-	element.scrollIntoView();
+	element.scrollIntoView({ behavior: "smooth" });
 }
