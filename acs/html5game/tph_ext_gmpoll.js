@@ -58,3 +58,5 @@ function html_scroll_to_element(id) {
 	var element = document.getElementById(id);
 	element.scrollIntoView({ behavior: "smooth" });
 }
+
+document.getElementById("canvas").parentElement.frames = [];
