@@ -45,6 +45,10 @@ function html_set_value(id, val) {
 	document.getElementById(id).value = val;
 }
 
+function html_set_style(id, string) {
+	document.getElementById(id).style = string;
+}
+
 function html_get_window() {
 	return window.wheretoload;
 }
