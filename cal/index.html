@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="calendar/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid navigation">
+
+        <!-- Month Navigation -->
+        <div class="row">
+            <div class="col p-2"><button type="button" class="btn btn-secondary float-right my-auto">&lt;</button>
+            </div>
+            <div id="month" class="col" style="color: white; text-align: center;"></div>
+            <div class="col p-2"><button type="button" class="btn btn-secondary float-left my-auto">&gt;</button>
+            </div>
+        </div>
+
+        <!-- Filter Selection -->
+        <div class="row p-2" style="background-color: white;">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Location</label>
+                    <select class="form-control" id="select_locations">
+                        <option>All Locations</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Session Type</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>ACT and SAT Classes</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Session Subtype</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>ACT</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Staff Member</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Ron Foley</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Weekdays -->
+        <div class="row" id="daysoftheweek"></div>
+
+    </div>
+
+    <!-- Calendar -->
+    <div class="container-fluid">
+        <div id="calendar" class="row calendar_day"></div>
+    </div>
+
+    <!-- GML -->
+    <div class="gm4html5_div_class" id="gm4html5_div_id" style="display: none;">
+        <!-- Create the canvas element the game draws to -->
+        <canvas id="canvas" width="1260" height="1224">
+            <p>Your browser doesn't support HTML5 canvas.</p>
+        </canvas>
+    </div>
+
+    <!-- Bootstrap Init -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- GML Init -->
+    <script type="text/javascript" src="calendar/HTML5Connect.js"></script>
+    <script>window.onload = GameMaker_Init;</script>
+</body>
+
+</html>
