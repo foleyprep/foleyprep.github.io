@@ -14,15 +14,19 @@
 
         <!-- Month Navigation -->
         <div class="row">
-            <div class="col p-2"><button type="button" class="btn btn-secondary float-right my-auto">&lt;</button>
+            <div class="col p-2"><button type="button" class="btn btn-secondary float-right my-auto"
+                    onclick="gmpoll = 1;">&lt; Previous
+                    month</button>
             </div>
             <div id="month" class="col" style="color: white; text-align: center;"></div>
-            <div class="col p-2"><button type="button" class="btn btn-secondary float-left my-auto">&gt;</button>
+            <div class="col p-2"><button type="button" class="btn btn-secondary float-left my-auto"
+                    onclick="gmpoll = 2;">&gt; Next
+                    month</button>
             </div>
         </div>
 
         <!-- Filter Selection -->
-        <div class="row p-2" style="background-color: white;">
+        <div class="row p-2" style="background-color: rgb(225, 225, 225);">
             <div class="col">
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Location</label>
@@ -33,13 +37,18 @@
             </div>
             <div class="col">
                 <div class="form-group">
+                    <label for="exampleFormControlSelect1">Staff Member</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>All Staff Members</option>
+                    </select>
+                </div>
+            </div>
+            <div class="w-100 d-lg-none"></div>
+            <div class="col">
+                <div class="form-group">
                     <label for="exampleFormControlSelect1">Session Type</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                        <option>ACT and SAT Classes</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>All Session Types</option>
                     </select>
                 </div>
             </div>
@@ -47,23 +56,7 @@
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Session Subtype</label>
                     <select class="form-control" id="exampleFormControlSelect1">
-                        <option>ACT</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Staff Member</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Ron Foley</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>All Session Subtypes</option>
                     </select>
                 </div>
             </div>

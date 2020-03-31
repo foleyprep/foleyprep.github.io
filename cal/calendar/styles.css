@@ -21,8 +21,8 @@ div.container{
 
 div.col.day{
     background-color: white;    
-    padding-right: 1px;
-    padding-left: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 hr{
