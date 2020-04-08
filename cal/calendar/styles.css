@@ -57,3 +57,15 @@ div.navigation{
     top: 0;
     z-index: 1000;
 }
+
+div.lightbox{
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;  /* adjust as per your needs */
+    height: 600px;   /* adjust as per your needs */
+    margin-left: -400px;   /* negative half of width above */
+    margin-top: -300px;   /* negative half of height above */
+    display: none;
+}
